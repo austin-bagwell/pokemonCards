@@ -10,31 +10,52 @@ main {
   height: 75%;
   width: 30%;
   padding: 20px;
+  min-height: 660px;
+  min-width: 350px;
+  margin: auto;
+}
+
+main > #pokemon-card {
+  height: 85vh;
+  width: auto;
 }
 
 .card-wrapper {
-  /* display: block; */
   background-color: rgb(230, 66, 66);
   border: 10px solid gold;
   border-radius: 10px;
-  /* height: 75%;
-  width: 50%; */
-  min-height: 400px;
+  height: 90%;
+  min-height: 550px;
   box-shadow: 4px 4px 3px 1px black;
 }
 
 /* Name, HP, type */
 #top-text-wrapper {
-  justify-content: space-between;
   text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-wrap: nowrap;
 }
 
-#top-text-wrapper span {
-  margin: 30px;
+#pokemon-name {
+  font-weight: 700;
+  position: relative;
+  left: 0;
+}
+#top-text-wrapper span:not(:first-child) {
+  margin: 0;
+  margin-left: 110px;
+}
+
+#top-text-wrapper span:last-child {
+  margin: 0;
 }
 
 /* Image */
 .img-wrapper {
+  background-color: whitesmoke;
+  display: flex;
   position: relative;
   width: 75%;
   min-height: 150px;
@@ -42,11 +63,13 @@ main {
   margin-bottom: 30px;
   border: 5px solid gold;
   border-radius: 10px;
-  /* max-width: 300px; */
 }
 
 .sprites {
   margin: auto;
+  padding: 0;
+  min-height: 245px;
+  min-width: 245px;
 }
 
 /* Stats */
