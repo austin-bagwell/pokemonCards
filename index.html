@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Poke-Workers</title>
+  </head>
+  <body>
+    <main>
+      <!-- POKEMON CARD  -->
+      <section id="pokemon-card">
+        <div class="card-wrapper">
+          <!-- Name, HP, type symbol -->
+          <div id="top-text-wrapper">
+            <span id="pokemon-name">Name</span>
+            <span id="hit-points">HP</span>
+            <span class="pokemon-type">Fire</span>
+          </div>
+          <!-- Image -->
+          <div class="img-wrapper">
+            <img class="sprites" id="front-sprite" src="" alt="" />
+          </div>
+          <!-- Stats -->
+          <div id="stats-wrapper">
+            <span>Basic stats</span>
+          </div>
+          <!-- Abilities -->
+          <div id="abilities">
+            <div class="ability-wrapper" id="ability-1-wrapper">
+              <span class="pokemon-type">Type icon</span>
+              <span class="ability-name">Ability name</span>
+              <span class="ability-dmg">10</span>
+            </div>
+            <div class="ability-wrapper" id="ability-2-wrapper">
+              <span class="pokemon-type">Type icon</span>
+              <span class="ability-name">Ability name</span>
+              <span class="ability-dmg">10</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Actions (add to deck, look at deck) -->
+      <section id="actions-section">
+        <!-- GENERATE NEW CARD BTN -->
+        <button type="button" name="button" id="choose-random">
+          One Pokeman For You
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

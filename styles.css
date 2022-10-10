@@ -1,0 +1,77 @@
+body {
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+main {
+  /* border: 1px solid black; */
+  height: 75%;
+  width: 30%;
+  padding: 20px;
+}
+
+.card-wrapper {
+  /* display: block; */
+  background-color: rgb(230, 66, 66);
+  border: 10px solid gold;
+  border-radius: 10px;
+  /* height: 75%;
+  width: 50%; */
+  min-height: 400px;
+  box-shadow: 4px 4px 3px 1px black;
+}
+
+/* Name, HP, type */
+#top-text-wrapper {
+  justify-content: space-between;
+  text-align: center;
+}
+
+#top-text-wrapper span {
+  margin: 30px;
+}
+
+/* Image */
+.img-wrapper {
+  position: relative;
+  width: 75%;
+  min-height: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 5px solid gold;
+  border-radius: 10px;
+  /* max-width: 300px; */
+}
+
+.sprites {
+  margin: auto;
+}
+
+/* Stats */
+#stats-wrapper {
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Abilities */
+.ability-wrapper {
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Actions */
+#actions-section {
+  display: flex;
+  padding-top: 25px;
+  justify-content: center;
+}
+
+#choose-random {
+  background-color: rgb(221, 221, 221);
+  min-height: 30px;
+  border-radius: 20px;
+  border: 1.5px solid darkgray;
+  box-shadow: 2px 2px 2px black;
+}
