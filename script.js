@@ -7,6 +7,7 @@ function getRandomPokemon() {
 
   const pokeName = document.querySelector("#pokemon-name");
   const frontSprite = document.querySelector("#front-sprite");
+  const hitPoints = document.querySelector("#hit-points");
   const ability1 = document.querySelector("#ability-1");
   const ability2 = document.querySelector("#ability-2");
   const icons = document.querySelectorAll(".icon");
@@ -23,7 +24,8 @@ function getRandomPokemon() {
         icon.src = "./assets/icons/" + data.types[0]?.type?.name + ".svg";
         icon.removeAttribute("hidden");
       });
-      console.log(data.types[0]?.type?.name);
+      hitPoints.innerText = data.stats[0]?.base_stat + " HP";
+      // console.log(data.stats[0]?.base_stat);
       ability1.innerText = data.abilities[0]?.ability?.name;
       ability2.innerText = data.abilities[1]?.ability?.name;
     })
