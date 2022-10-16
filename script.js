@@ -9,6 +9,7 @@ function getRandomPokemon() {
   const frontSprite = document.querySelector("#front-sprite");
   const ability1 = document.querySelector("#ability-1");
   const ability2 = document.querySelector("#ability-2");
+  const icons = document.querySelectorAll(".icon");
 
   fetch(url)
     .then((res) => res.json())
@@ -16,7 +17,13 @@ function getRandomPokemon() {
       console.log(`Pokemon promise data: `, data);
       pokeName.innerText = data.name;
       frontSprite.src = data.sprites.front_default;
-
+      // update all icon src, alt based on
+      icons.forEach((icon) => {
+        icon.classList = "icon " + data.types[0]?.type?.name;
+        icon.src = "./assets/icons/" + data.types[0]?.type?.name + ".svg";
+        icon.removeAttribute("hidden");
+      });
+      console.log(data.types[0]?.type?.name);
       ability1.innerText = data.abilities[0]?.ability?.name;
       ability2.innerText = data.abilities[1]?.ability?.name;
     })
