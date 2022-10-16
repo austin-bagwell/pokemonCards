@@ -23,7 +23,7 @@ main > #pokemon-card {
 
 .card-wrapper {
   background-color: rgb(230, 66, 66);
-  border: 11px ridge rgba(255, 217, 0, 0.877);
+  border: 11px solid rgba(255, 217, 0, 0.877);
   border-radius: 5px;
   height: 90%;
   min-height: 550px;
@@ -65,8 +65,9 @@ main > #pokemon-card {
   min-height: 150px;
   margin: auto;
   margin-bottom: 0;
-  border: 4px ridge gold;
-  border-radius: 5px;
+  border: 7px ridge gold;
+  border-radius: 1px;
+  box-shadow: 5px 5px 5px black;
 }
 
 .sprites {
