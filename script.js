@@ -25,8 +25,12 @@ function getRandomPokemon() {
         icon.removeAttribute("hidden");
       });
       hitPoints.innerText = data.stats[0]?.base_stat + " HP";
-      // console.log(data.stats[0]?.base_stat);
+
+      // make HTML template for the ability section
+      // use insertAdjacentHTML to create correct # of abilities
+      //
       ability1.innerText = data.abilities[0]?.ability?.name;
+      // if no ability 2, need option to
       ability2.innerText = data.abilities[1]?.ability?.name;
     })
     .catch((err) => {
